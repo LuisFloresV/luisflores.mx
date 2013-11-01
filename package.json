@@ -1,0 +1,11 @@
+{
+  "name": "luisflores.mx",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "3.x"
+  },
+  "engines": {
+    "node": "0.10.21",
+    "npm": "1.3.11"
+  }
+}
