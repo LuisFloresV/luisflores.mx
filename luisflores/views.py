@@ -2,4 +2,4 @@ from luisflores import app
 
 @app.route('/')
 def index():
-    return 'Hello, I\'m Luis Flores. Bye!'
+    return 'Hello, I am Luis Flores. Bye!'
