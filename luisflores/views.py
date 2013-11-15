@@ -1,5 +1,6 @@
 from luisflores import app
+from flask import render_template
 
 @app.route('/')
 def index():
-    return 'Hello, I am Luis Flores. Bye!'
+    return render_template('base.html')
