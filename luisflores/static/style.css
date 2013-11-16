@@ -1,64 +1,48 @@
-.navbar-default {
-    background-color: #000000;
-    border-color: #a51014;
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
 }
-.navbar-default .navbar-brand {
-    color: #ababab;
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
 }
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus {
-    color: #7ba83e;
+
+h4 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
 }
-.navbar-default .navbar-nav > li > a {
-    color: #ababab;
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px;
 }
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-    color: #7ba83e;
+
+/* Set the fixed height of the footer here */
+#footer {
+  height: 60px;
+  background-color: #f5f5f5;
 }
-.navbar-default .navbar-nav > .active > a, 
-.navbar-default .navbar-nav > .active > a:hover, 
-.navbar-default .navbar-nav > .active > a:focus {
-    color: #7ba83e;
-    background-color: #a51014;
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+.container {
+  width: auto;
+  max-width: 680px;
+  padding: 0 15px;
 }
-.navbar-default .navbar-nav > .open > a, 
-.navbar-default .navbar-nav > .open > a:hover, 
-.navbar-default .navbar-nav > .open > a:focus {
-    color: #7ba83e;
-    background-color: #a51014;
-}
-.navbar-default .navbar-nav > .dropdown > a .caret {
-    border-top-color: #ababab;
-    border-bottom-color: #ababab;
-}
-.navbar-default .navbar-nav > .dropdown > a:hover .caret,
-.navbar-default .navbar-nav > .dropdown > a:focus .caret {
-    border-top-color: #7ba83e;
-    border-bottom-color: #7ba83e;
-}
-.navbar-default .navbar-nav > .open > a .caret, 
-.navbar-default .navbar-nav > .open > a:hover .caret, 
-.navbar-default .navbar-nav > .open > a:focus .caret {
-    border-top-color: #7ba83e;
-    border-bottom-color: #7ba83e;
-}
-.navbar-default .navbar-toggle {
-    border-color: #a51014;
-}
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus {
-    background-color: #a51014;
-}
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: #ababab;
-}
-@media (max-width: 767px) {
-    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-        color: #ababab;
-    }
-    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
-    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-        color: #7ba83e;
-    }
+.container .credit {
+  margin: 20px 0;
 }
