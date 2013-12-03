@@ -1,52 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
- 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Luis Flores Personal Blog">
-  <meta name="author" content="Luis Flores">
-	<title>Luis Flores</title>
-	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
-	<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
-  <link href='http://fonts.googleapis.com/css?family=Raleway:100,400' rel='stylesheet' type='text/css'>
- <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <!-- Wrap all page content here -->
-    <div id="wrap">
-      <!-- Begin page content -->
-      <div class="container">
-        <div class="page-header">
-          <div class="row nav">
-            <div class="col-xs-12 col-md-8">
-              <h1>LUIS FLORES</h1>
-              <h4>PROGRAMMER, TACO EATER, MORE?</h4>
-            </div>
-            <div class="col-xs-6 col-md-4">
-              <br/>
-              <ul class="nav nav-pills nav-justified">
-                <li><a href="/">Home <span class="glyphicon glyphicon-home"></span></a></li>
-                <li class="active"><a href="/about">Me <span class="glyphicon glyphicon-user"></span></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <h4>I'm a mexican developer currently working in Iceland and studying Icelandic \o/</h4>
-        <h4>This is my personal website. More stuff coming soon... The end!</h4>
-      </div>
-    </div>
-    <div id="footer">
-      <div class="container">
-        <p class="text-muted credit">© 2013 Copyright Luis Flores.</p>
-      </div>
-    </div>
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-  </body>
-</html>
+{% extends "base.html" %}
+{% block content %}
+</br>
+<p class="lead">My name is <strong>Luis Flores</strong>. I'm 22 years old software developer from Mexico currently working and studying in Iceland.</p>
+<p class="lead">I'm mostly an iOS Developer and I love to work on the backend mainly with python and Flask.</p>
+<p class="lead">Competitive programming is my favorite sport, I like to create algorithms and solutions. I Competitivete in programming online contests when my schedule allows me, C++ is my prefered language.</p>
+<p class="lead">I also have experience and training in software security.</p>
+<blockquote class="pull-right">Write code, refactor, bang head against wall, rewrite code...</blockquote>
+</br>
+<h2>Contact</h2>
+<p class="lead">Email: <a href="mailto:me@luisflores.mx">me@luisflores.mx</a> </br>
+  Twitter: <a href="http://twitter.com/aklovo">@Aklovo</a></br>
+  <a href="http://github.com/LuisFloresV" ><img src={{ url_for('static', filename = 'images/icons/github.png') }} class="img-rounded" alt="LuisFloresF"> Github </a>
+</p>
+{% endblock %}
