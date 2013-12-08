@@ -51,3 +51,20 @@ h4 {
   margin-bottom:5px;
   margin-top:5px;
 }
+
+.tilt {
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+ 
+.tilt:hover {
+            opacity: 0.7;
+  -webkit-transform: rotate(20deg);
+     -moz-transform: rotate(20deg);
+       -o-transform: rotate(20deg);
+      -ms-transform: rotate(20deg);
+          transform: rotate(20deg);
+}
