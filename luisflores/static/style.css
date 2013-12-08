@@ -41,6 +41,13 @@ h4 {
   max-width: 960px;
   padding: 0 15px;
 }
+
 .container .credit {
   margin: 20px 0;
+}
+
+.logo-buffer {
+  margin-left:5px; 
+  margin-bottom:5px;
+  margin-top:5px;
 }
