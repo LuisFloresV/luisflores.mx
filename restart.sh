@@ -13,7 +13,7 @@ then
 	return
 fi
 
-nohup /root/luisflores.mx/venv/bin/python runserver.py > /dev/null 2>&1 &
+nohup /root/luisflores.mx/venv/bin/python runserver.py >> server.log 2>&1&
 
 STATUS=$?
 
