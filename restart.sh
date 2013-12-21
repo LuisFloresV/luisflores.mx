@@ -1,25 +1,33 @@
 #!/bin/bash
 
-date +"%c" >> restart.log
+getTime() {
+	echo "$(date +"%m-%d-%Y %T") - "
+}
 
-ID=$(pidof python)
-kill -9 $ID
+restart() {
+	ID=$(pidof python)
+	kill -9 $ID
 
-STATUS=$?
+	STATUS=$?
 
-if [ $STATUS != 0 ]
-then
-	echo "Could not kill process with PID: $ID" >> restart.log
-	return
-fi
 
-nohup /root/luisflores.mx/venv/bin/python runserver.py >> server.log 2>&1&
+	if [ $STATUS != 0 ]
+	then
+		echo $(getTime) "Could not kill process with PID: $ID"
+		return -1
+	fi
 
-STATUS=$?
+	nohup /root/luisflores.mx/venv/bin/python runserver.py >> /var/log/luisflores/server.log 2>&1&
 
-if [ $STATUS != 0 ]
-then
-	echo "Could not start server" >> restart.log
-fi
+	STATUS=$?
 
-echo "Server started" >> restart.log
+	if [ $STATUS != 0 ]
+	then
+		echo $(getTime) "Could not start server"
+		return -2
+	fi
+
+	echo $(getTime) "Server started"	
+}
+
+restart
