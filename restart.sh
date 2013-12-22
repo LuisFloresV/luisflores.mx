@@ -17,7 +17,7 @@ restart() {
 		return -1
 	fi
 
-	nohup /root/luisflores.mx/venv/bin/python runserver.py >> /var/log/luisflores/server.log 2>&1&
+	nohup /root/luisflores.mx/venv/bin/python /root/luisflores.mx/runserver.py >> /var/log/luisflores/server.log 2>&1&
 
 	STATUS=$?
 
