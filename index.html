@@ -1,5 +1,8 @@
-{% extends "base.html" %}
-{% block content %}
+---
+layout: default
+title: Luis Flores
+---
+
 </br>
 <div itemscope itemtype="http://data-vocabulary.org/Person">
 
@@ -15,17 +18,16 @@ I compete in programming online contests when my schedule allows me, C++ is my p
 </br>
 <h2>Contact Me</h2>
 <div class="row">
- 	<div class="tilt col-sm-1 logo-buffer">
- 		<a href="mailto:me@luisflores.mx"><img src={{ url_for('static', filename = 'images/icons/email.png') }} alt="LuisFloresF"></a>
- 	</div>
+  <div class="tilt col-sm-1 logo-buffer">
+    <a href="mailto:me@luisflores.mx"><img src="images/email.png" alt="LuisFloresF"></a>
+  </div>
     <div class="tilt col-sm-1 logo-buffer">
-    	<a href="http://twitter.com/aklovo"><img src={{ url_for('static', filename = 'images/icons/twitter.png') }} alt="LuisFloresF"></a>
+      <a href="http://twitter.com/aklovo"><img src="images/twitter.png" alt="LuisFloresF"></a>
     </div>
     <div class="tilt col-sm-1 logo-buffer">
-    	<a href="http://github.com/LuisFloresV" ><img src={{ url_for('static', filename = 'images/icons/github.png') }} alt="LuisFloresF"></a>
+      <a href="http://github.com/LuisFloresV" ><img src="images/github.png" alt="LuisFloresF"></a>
     </div>
     <div class="tilt col-sm-1 logo-buffer">
-    	<a href="http://www.linkedin.com/in/luisfloresv" ><img src={{ url_for('static', filename = 'images/icons/linkedin.png') }} alt="LuisFloresF"></a>
+      <a href="http://www.linkedin.com/in/luisfloresv" ><img src="images/linkedin.png" alt="LuisFloresF"></a>
     </div>
 </div>
-{% endblock %}
