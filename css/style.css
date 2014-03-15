@@ -1,64 +1,60 @@
-/* Sticky footer styles
--------------------------------------------------- */
-html,
 body {
-  height: 100%;
-  /* The html and body elements cannot have any padding or margin. */
+  background-color: #1a444c;
+  color:#ffffff;
+  font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue';
+  font-weight: 100;
+  font-size: 16px;
+  letter-spacing: 1px;
 }
 
-h1 {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
+.container {
+  margin-top: 150px;
+}
+
+.about {
+  max-width: 560px;
+}
+
+.about-text {
+  padding-top: 20px;
+}
+
+.photo {
+  width: 80px;
+  height: 80px;
+  float: right;
+  box-shadow: 2px 2px 2px black;
+  -webkit-transform: rotate(4deg);
+     -moz-transform: rotate(4deg);
+       -o-transform: rotate(4deg);
+      -ms-transform: rotate(4deg);
+          transform: rotate(4deg);
+}
+
+.link {
+  color:#EB7600;
+}
+
+.link:hover {
+  color:#EDAC65;
+}
+
+.name {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-size: 18px;
+  font-weight: 300;
 }
 
 h2 {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-  font-size: 28px;
-}
-
-h4 {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 100;
-}
-
-/* Wrapper for page content to push down footer */
-#wrap {
-  min-height: 100%;
-  height: auto;
-  /* Negative indent footer by its height */
-  margin: 0 auto -60px;
-  /* Pad bottom by footer height */
-  padding: 0 0 60px;
-}
-
-/* Set the fixed height of the footer here */
-#footer {
-  height: 65px;
-  background-color: #f0f0f0;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 100;
-  font-size: 18px;
-}
-
-/* Custom page CSS
--------------------------------------------------- */
-/* Not required for template or sticky footer method. */
-
-.container {
-  width: auto;
-  max-width: 960px;
-  padding: 0 15px;
-}
-
-.container .credit {
-  margin: 20px 0;
+  font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue';
+  font-size: 30px;
+  font-weight: 300;
 }
 
 .logo-buffer {
-  margin-left:5px; 
-  margin-bottom:5px;
-  margin-top:5px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 
 .tilt {
