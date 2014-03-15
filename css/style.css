@@ -19,11 +19,19 @@ body {
   padding-top: 20px;
 }
 
+.about-contact {
+  padding: 30px;
+}
+
+.about-contact-text {
+  text-align: center;;
+}
+
 .photo {
   width: 80px;
   height: 80px;
   float: right;
-  box-shadow: 2px 2px 2px black;
+  box-shadow: 3px 3px 3px black;
   -webkit-transform: rotate(4deg);
      -moz-transform: rotate(4deg);
        -o-transform: rotate(4deg);
