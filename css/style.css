@@ -52,7 +52,7 @@ body {
 }
 
 .link:hover {
-  color:#EDAC65;
+  color:#edac65;
   text-decoration: none;
   border-bottom: 2px solid #ffffff;
 }
@@ -61,33 +61,4 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
   font-size: 18px;
   font-weight: 300;
-}
-
-h2 {
-  font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue';
-  font-size: 30px;
-  font-weight: 300;
-}
-
-.logo-buffer {
-  margin-left: 5px;
-  margin-bottom: 5px;
-  margin-top: 5px;
-}
-
-.tilt {
-  -webkit-transition: all 0.5s ease;
-     -moz-transition: all 0.5s ease;
-       -o-transition: all 0.5s ease;
-      -ms-transition: all 0.5s ease;
-          transition: all 0.5s ease;
-}
- 
-.tilt:hover {
-            opacity: 0.7;
-  -webkit-transform: rotate(20deg);
-     -moz-transform: rotate(20deg);
-       -o-transform: rotate(20deg);
-      -ms-transform: rotate(20deg);
-          transform: rotate(20deg);
 }
