@@ -31,12 +31,12 @@ body {
   width: 80px;
   height: 80px;
   float: right;
-  box-shadow: 3px 3px 3px black;
-  -webkit-transform: rotate(4deg);
-     -moz-transform: rotate(4deg);
-       -o-transform: rotate(4deg);
-      -ms-transform: rotate(4deg);
-          transform: rotate(4deg);
+  box-shadow: 1px 1px 1px black;
+  -webkit-transform: rotate(3deg);
+     -moz-transform: rotate(3deg);
+       -o-transform: rotate(3deg);
+      -ms-transform: rotate(3deg);
+          transform: rotate(3deg);
 }
 
 .link {
