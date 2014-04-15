@@ -27,18 +27,6 @@ body {
   text-align: center;;
 }
 
-.photo {
-  width: 80px;
-  height: 80px;
-  float: right;
-  box-shadow: 1px 1px 1px black;
-  -webkit-transform: rotate(3deg);
-     -moz-transform: rotate(3deg);
-       -o-transform: rotate(3deg);
-      -ms-transform: rotate(3deg);
-          transform: rotate(3deg);
-}
-
 .link {
   color:#EB7600;
   text-decoration: none;
