@@ -46,7 +46,20 @@ body {
 }
 
 .name {
-  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 18px;
   font-weight: 300;
+}
+
+.photo {
+  background: gray;
+  border-width:1px;
+  border-style:solid;
+  border-color: black;
+}
+
+.photo:before{
+	content: "";
+	display: block;
+	padding-top: 56.25%;
 }
