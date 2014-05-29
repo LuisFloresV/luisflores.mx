@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding-top: 68px;
+}
+
+@media (max-width: 979px) {
+  body {
+    padding-top: 0px;
+  }
+}
+
+.navbar {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    padding: 8px 0;
+}
+
+#map {
+    width: 100%;
+    height: 108%;
+}
+
+.map-container {
+  width: 100%;
+  height: 400px;
+}
+
+@media (min-width: 970px) {
+  #map {
+      width: 100%;
+      height: 100%;
+  }
+
+  .map-container {
+    width: 50%;
+    height: 100%;
+    position: fixed;
+  }
+}
+
+.photo {
+  border-width:1px;
+  border-style:solid;
+  border-color: black;
+  padding: 0 !important;
+  margin: 0 !important;
+}

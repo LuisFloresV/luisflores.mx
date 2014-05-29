@@ -7,10 +7,6 @@ body {
   letter-spacing: 1px;
 }
 
-.container {
-  margin-top: 150px;
-}
-
 .about {
   max-width: 560px;
 }
@@ -24,7 +20,7 @@ body {
 }
 
 .about-contact-text {
-  text-align: center;;
+  text-align: center;
 }
 
 .link {
@@ -49,17 +45,4 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 18px;
   font-weight: 300;
-}
-
-.photo {
-  background: gray;
-  border-width:1px;
-  border-style:solid;
-  border-color: black;
-}
-
-.photo:before{
-	content: "";
-	display: block;
-	padding-top: 56.25%;
 }
