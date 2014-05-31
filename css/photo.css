@@ -61,7 +61,6 @@ body {
   height: 70px;
 }
 
-
 .overlay {
   position: relative;
   top: -25px;
@@ -81,7 +80,7 @@ body {
 }
 
 .photo {
-  /*border: 1px solid black;*/
+  border: 1px solid black;
   overflow: hidden;
 }
 
