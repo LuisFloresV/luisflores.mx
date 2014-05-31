@@ -2,148 +2,53 @@
 <html lang="en">
 <head>
 
-  <!-- Meta tags -->
   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Luis Flores Photography">
+  <meta name="description" content="Luis Flores Website">
   <meta name="author" content="Luis Flores">
 
   <title>{{ page.title }}</title>
 
-  <!-- Stylesheets -->
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
   <link rel="stylesheet" href="/css/photo.css">
   <link rel="stylesheet" href="/css/midnight_blue/css/midnight_blue.css"/>
 
+  <link href='http://fonts.googleapis.com/css?family=Quicksand:400|Varela+Round' rel='stylesheet' type='text/css'>
+
   <link rel="shortcut icon" href="/images/favicon.ico">
-
-  <!-- Fonts -->
-  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-
-  <!-- Magnific Popup core CSS file -->
-  <link rel="stylesheet" href="css/magnific-popup.css">
-
 </head>
 <body>
-    <div class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">Luis Flores</a>
-        </div>
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#about">About</a></li>
-          </ul>
-        </div>
+    <div class="header">
+      <div class="header-title">
+        LUIS FLORES
+      </div>
+      <div class="header-about">
+        <a class="link" href="/">ABOUT</a>
       </div>
     </div>
 
-    <div id="map"></div>
-    <div class="map-menu"></div>
-            <!-- <div class="row">
-              <div class="col-xs-4">
-                <div class="dropdown">
-                  <select id="ajaxSelect1">
-                    <option value="option1">First option</option>
-                    <option value="option2">Second option</option>
-                    <option value="option1">Third option</option>
-                  </select>
-                </div>
-              </div>
-
-
-              <div class="col-xs-4">
-                <div class="dropdown">
-                  <select id="ajaxSelect2">
-                    <option value="option1">First option</option>
-                    <option value="option2">Second option</option>
-                    <option value="option1">Third option</option>
-                  </select>
-                </div>
-              </div>
-
-              <div class="col-xs-4">
-                <div class="dropdown">
-                  <select id="ajaxSelect3">
-                    <option value="option1">First option</option>
-                    <option value="option2">Second option</option>
-                    <option value="option1">Third option</option>
-                  </select>
-                </div>
-              </div> -->
-
-    <div class="overlay"></div>
-
-    <div class="album-container">
-      {{ content }}
-    </div>
+    {{ content }}
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
 
+    <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/jquery.heapbox-0.9.4.min.js"></script>
     <script src="js/map.js"></script>
     <script src="js/custom.js"></script>
 
-    <!-- Magnific Popup core JS file -->
-    <script src="js/jquery.magnific-popup.min.js"></script>
-
-
-    <script type="text/javascript">
-      $(document).ready(function() {
-
-
-		      $("#ajaxSelect1").heapbox();
-          $("#ajaxSelect2").heapbox();
-          $("#ajaxSelect3").heapbox();
-
-
-        // json = '[{"value":"dynamic_value_1","text":"Dynamic value 1"},{"value":"dynamic_value_2","text":"Dynamic value 2"}]';
-        // $("#ajaxSelect").heapbox("set",json);
-
-
-        // // init heapbox for #ajaxSelect and define onChange callback with ajax
-        // $("#ajaxSelect").heapbox({
-        //     'onChange':function(value) {
-        //       //hide heapbox
-        //       $("#ajaxSelect2").heapbox("hide");
-        //
-        //      if(value) {
-        //        showAjaxSelect2(json);
-        //        $("#ajaxSelect2").heapbox("show");
-        //
-        //       }
-        //     }
-        // });
-        //
-        // //init heapbox for #ajaxSelect2
-        // $("#ajaxSelect2").heapbox({
-        //  'onChange': function(value) {
-        //    showMessage();
-        //   }
-        // });
-        //
-        // //hide heapbox
-        // $("#ajaxSelect2").heapbox("hide");
-        //
-        // //set data to heapbox for #ajaxSelect2
-        // function showAjaxSelect2(data) {
-        //    $("#ajaxSelect2").heapbox("set",data);
-        // }
-        //
-        // //show selected values
-        // function showMessage() {
-        //   foodType = $("#ajaxSelect option:selected").attr("value");
-        //   food = $("#ajaxSelect2 option:selected").attr("value");
-        //
-        //   alert("Cool, you are into "+foodType+", especially "+food+".");
-        // }
-
-      });
-  	</script>
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-46215114-1', 'luisflores.mx');
+      ga('send', 'pageview');
+    </script>
 
   </body>
 </html>
