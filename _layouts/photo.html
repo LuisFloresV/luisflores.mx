@@ -14,10 +14,13 @@
   <!-- Stylesheets -->
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
   <link rel="stylesheet" href="/css/photo.css">
+  <link rel="stylesheet" href="/css/midnight_blue/css/midnight_blue.css"/>
+
+  <link rel="stylesheet" href="/css/photobox.css">
+
   <link rel="shortcut icon" href="/images/favicon.ico">
 
   <!-- Fonts -->
-  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
 </head>
@@ -25,12 +28,6 @@
     <div class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
           <a class="navbar-brand" href="#">Luis Flores</a>
         </div>
         <div class="collapse navbar-collapse">
@@ -41,23 +38,109 @@
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-md-6">
-        <div class="map-container">
+    <div id="map"></div>
+    <div class="map-menu"></div>
+            <!-- <div class="row">
+              <div class="col-xs-4">
+                <div class="dropdown">
+                  <select id="ajaxSelect1">
+                    <option value="option1">First option</option>
+                    <option value="option2">Second option</option>
+                    <option value="option1">Third option</option>
+                  </select>
+                </div>
+              </div>
 
-          <div id="map"></div>
-        </div>
-      </div>
-      <div class="col-md-6">
-          {{ content }}
-      </div>
+
+              <div class="col-xs-4">
+                <div class="dropdown">
+                  <select id="ajaxSelect2">
+                    <option value="option1">First option</option>
+                    <option value="option2">Second option</option>
+                    <option value="option1">Third option</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="col-xs-4">
+                <div class="dropdown">
+                  <select id="ajaxSelect3">
+                    <option value="option1">First option</option>
+                    <option value="option2">Second option</option>
+                    <option value="option1">Third option</option>
+                  </select>
+                </div>
+              </div> -->
+
+    <div class="overlay"></div>
+
+    <div class="album-container">
+      {{ content }}
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
 
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+    <script src='js/jquery.photobox.js'></script>
+    <script src="js/jquery.heapbox-0.9.4.min.js"></script>
     <script src="js/map.js"></script>
+    <script src="js/custom.js"></script>
+
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+
+
+		      $("#ajaxSelect1").heapbox();
+          $("#ajaxSelect2").heapbox();
+          $("#ajaxSelect3").heapbox();
+
+
+        // json = '[{"value":"dynamic_value_1","text":"Dynamic value 1"},{"value":"dynamic_value_2","text":"Dynamic value 2"}]';
+        // $("#ajaxSelect").heapbox("set",json);
+
+
+        // // init heapbox for #ajaxSelect and define onChange callback with ajax
+        // $("#ajaxSelect").heapbox({
+        //     'onChange':function(value) {
+        //       //hide heapbox
+        //       $("#ajaxSelect2").heapbox("hide");
+        //
+        //      if(value) {
+        //        showAjaxSelect2(json);
+        //        $("#ajaxSelect2").heapbox("show");
+        //
+        //       }
+        //     }
+        // });
+        //
+        // //init heapbox for #ajaxSelect2
+        // $("#ajaxSelect2").heapbox({
+        //  'onChange': function(value) {
+        //    showMessage();
+        //   }
+        // });
+        //
+        // //hide heapbox
+        // $("#ajaxSelect2").heapbox("hide");
+        //
+        // //set data to heapbox for #ajaxSelect2
+        // function showAjaxSelect2(data) {
+        //    $("#ajaxSelect2").heapbox("set",data);
+        // }
+        //
+        // //show selected values
+        // function showMessage() {
+        //   foodType = $("#ajaxSelect option:selected").attr("value");
+        //   food = $("#ajaxSelect2 option:selected").attr("value");
+        //
+        //   alert("Cool, you are into "+foodType+", especially "+food+".");
+        // }
+
+      });
+  	</script>
+
   </body>
 </html>

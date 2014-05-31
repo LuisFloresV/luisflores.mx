@@ -5,6 +5,7 @@ var options = {
     disableDefaultUI: true,
     scrollwheel: false,
     draggable: false,
+    noClear: true,
     styles: [
     {
       featureType: "administrative",
