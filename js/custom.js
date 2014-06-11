@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
   $('.gallery').magnificPopup({
     delegate: 'a', // child items selector, by clicking on it popup will open
     type: 'image',
@@ -6,7 +7,22 @@ $(document).ready(function() {
       enabled:true
     }
   });
+
+
+  $.getJSON( "../menu.json", function( data ) {
+    $.each( data, function( key, val ) {
+      console.log (key);
+
+      $.each( val, function( key, val ) {
+        console.log (key);
+      });
+
+    });
+
+  });
+
 });
+
 
 $(document).ready(function() {
     $("#ajaxSelect1").heapbox();
