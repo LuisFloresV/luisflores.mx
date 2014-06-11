@@ -1,0 +1,51 @@
+{
+  "Europe": {
+
+    "Iceland": {
+      "Höfuðborgarsvæði": {
+        "photos": [
+          {
+              "title": "Big Title 1",
+              "description": "Description 1",
+              "image_url": "google1.com"
+          },
+          {
+              "title": "Big Title 2",
+              "description": "Description 2",
+              "image_url": "google2.com"
+          }
+        ]
+      },
+
+      "Vesturland": {
+
+      }
+    },
+
+    "Austria": {
+      "Vienna": {
+
+      }
+    }
+  },
+
+	"America": {
+
+    "Mexico": {
+      "Aguascalientes": {
+
+      },
+
+      "Jalisco": {
+
+      },
+    },
+
+    "United States": {
+      "Chicago": {
+
+      }
+    }
+  }
+
+}
