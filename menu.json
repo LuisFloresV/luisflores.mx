@@ -7,12 +7,12 @@
           {
               "title": "Big Title 1",
               "description": "Description 1",
-              "image_url": "google1.com"
+              "image_url": "https://raw.githubusercontent.com/luisfloresv/luisfloresv.github.io/develop/photos/Iceland/H%C3%B6fu%C3%B0borgarsv%C3%A6%C3%B0i/1.JPG"
           },
           {
               "title": "Big Title 2",
               "description": "Description 2",
-              "image_url": "google2.com"
+              "image_url": "https://raw.githubusercontent.com/luisfloresv/luisfloresv.github.io/develop/photos/Iceland/H%C3%B6fu%C3%B0borgarsv%C3%A6%C3%B0i/2.JPG"
           }
         ]
       },
