@@ -1,4 +1,10 @@
 luisflores.mx
 =============
 
-Personal Website
+```
+# Install dependencies
+bundle install
+
+# Run the server
+jeykll server
+```

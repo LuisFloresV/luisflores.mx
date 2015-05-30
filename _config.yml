@@ -1,1 +1,25 @@
+# Setup
+title: Luis Flores
+url: "http://luisflores.mx"
+basename: ""
+
+author:
+  name: Luis Flores
+  email: me@luisflores.mx
+
+# Build settings
 markdown: kramdown
+sass:
+  sass_dir: _scss
+  style: compressed
+
+# Custom Vars
+github:
+  repo: https://github.com/luisfcofv/luisfcofv.github.io
+
+# Custom Vars
+handle: luisfcofv
+
+gems:
+  - jemoji
+  - jekyll-mentions
